@@ -1,0 +1,12 @@
+.main-header {
+  display: block;
+  margin: auto;
+  text-align: center;
+
+}
+.tile {
+    text-align: center;
+    background-color: white;
+    opacity: 0.9;
+    width: 80%;
+}
