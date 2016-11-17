@@ -1,12 +1,28 @@
-.main-header {
+.header-container {
   display: block;
   margin: auto;
   text-align: center;
+  margin-top: 60px;
+  background-color: white;
+  opacity: 0.9;
+  width: 90%;
+  padding: 10px;
 
 }
-.tile {
+.main-container {
+    display: block;
+    margin: auto;
     text-align: center;
+
+
+}
+
+.tile {
+
     background-color: white;
     opacity: 0.9;
     width: 80%;
+    margin: auto;
+    margin-top: 160px;
+    padding: 10px;
 }

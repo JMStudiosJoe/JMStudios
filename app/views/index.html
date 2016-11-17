@@ -1,23 +1,32 @@
-<html>
+<html ng-app="jmstudios-app">
 <head>
-  <title>JMStudios</title>
+    <title>JMStudios</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <link type="text/css" rel="stylesheet" href="/app/css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <!--Import Google Icon Font-->
-   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--Import materialize.css-->
 
-   <link type="text/css" rel="stylesheet" href="/app/css/main.css">
-   <!--Let browser know website is optimized for mobile-->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<body>
-
-<div class="parallax-container">
-    <div class="main-header tile">
+<body ng-controller="myController">
+    {{temp}}
+    <div class="header-container tile">
         <h1>JMStuidos</h1>
         <span class="waves-effect waves-light">Just Making Solutions Studios</span>
     </div>
-    <div id="parallax" class="parallax"><img src="/app/images/jmstudiosbackground.jpg"></div>
-</div>
+    <div class="parallax-container">
+        <div id="parallax" class="parallax"><img src="/app/images/jmstudiosbackground.jpg"></div>
+    </div>
+    <div class="main-container">
+        <div class="tile">
+            <span>Creating solutions for the problems I want to tackle.</span>
+        </div>
+        <div class="contact-container">
+
+        </div>
+    </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <!-- Compiled and minified CSS -->
@@ -25,5 +34,8 @@
       <!-- Compiled and minified JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
       <script src="/app/js/parallax-init.js"></script>
+
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
+      <script src="/app/js/main.js"></script>
 </body>
 </html>
