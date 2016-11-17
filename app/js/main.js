@@ -1,18 +1,8 @@
-// function TestCtrl() {
-//   // basic controller where we preset the scope myString variable
-//   var self = this;
-//   self.myString = "hello world";
-// }
-//
-// // this is where the filter magic happens.
-//
-//
-// angular.module('app', [])
-// .controller('TestCtrl', TestCtrl);
+//typescript and angularjs 2 hopefully https://angular.io/docs/ts/latest/quickstart.html
+(function(){
+    var app = angular.module('jmstudios-app',[]);
+    app.controller('myController', function($scope, $http) {
 
-
-var app = angular.module('jmstudios-app',[]);
-app.controller('myController', function($scope, $http) {
-
-    $scope.temp = "hello jms";
-})
+        $scope.temp = "hello jms";
+    });
+})();

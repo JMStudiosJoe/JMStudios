@@ -1,3 +1,6 @@
+body {
+    font-size: 24px;
+}
 .header-container {
   display: block;
   margin: auto;
@@ -7,14 +10,17 @@
   opacity: 0.9;
   width: 90%;
   padding: 10px;
-
+  font-size: 36px;
 }
+
+.title {
+    font-size: 66px;
+}
+
 .main-container {
     display: block;
     margin: auto;
     text-align: center;
-
-
 }
 
 .tile {
@@ -23,6 +29,5 @@
     opacity: 0.9;
     width: 80%;
     margin: auto;
-    margin-top: 160px;
     padding: 10px;
 }
