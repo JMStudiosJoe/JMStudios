@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('jmstudios-app',[])
+    var app = angular.module('jmstudios-app.projects',[])
     .directive('projects', function() {
         return {
             restrict: "E",
