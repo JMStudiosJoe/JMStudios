@@ -1,0 +1,36 @@
+.tile {
+
+    background-color: purple;
+    opacity: percentage(8/9);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+
+    img {
+        background-color: lime;
+    }
+}
+body {
+    font-size: 24px;
+}
+.header-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  background-color: white;
+  opacity: 0.9;
+  width: 90%;
+  padding: 10px;
+  font-size: 36px;
+}
+
+.title {
+    font-size: 66px;
+}
+
+.main-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
