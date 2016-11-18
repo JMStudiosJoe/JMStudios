@@ -1,0 +1,14 @@
+.team-container {
+    float: left;
+
+    .profile-picture {
+        width: 160px;
+        height: 160px;
+
+    }
+
+    .alter-ego {
+        width: 110px;
+        height: 110px;
+    }
+}
