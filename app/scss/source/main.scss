@@ -1,3 +1,15 @@
+.tile {
+
+    background-color: purple;
+    opacity: percentage(8/9);
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+
+    img {
+        background-color: lime;
+    }
+}
 body {
     font-size: 24px;
 }
@@ -21,13 +33,4 @@ body {
     display: block;
     margin: auto;
     text-align: center;
-}
-
-.tile {
-
-    background-color: white;
-    opacity: 0.9;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
 }

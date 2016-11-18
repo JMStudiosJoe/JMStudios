@@ -1,0 +1,40 @@
+.tile {
+  background-color: purple;
+  opacity: 88.88889%;
+  width: 80%;
+  margin: auto;
+  padding: 10px; }
+  .tile img {
+    background-color: lime; }
+
+body {
+  font-size: 24px; }
+
+.header-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  background-color: white;
+  opacity: 0.9;
+  width: 90%;
+  padding: 10px;
+  font-size: 36px; }
+
+.title {
+  font-size: 66px; }
+
+.main-container {
+  display: block;
+  margin: auto;
+  text-align: center; }
+
+.team-container {
+  float: left;
+  background-color: green; }
+  .team-container .profile-picture {
+    width: 160px;
+    height: 160px; }
+  .team-container .alter-ego {
+    width: 110px;
+    height: 110px; }
