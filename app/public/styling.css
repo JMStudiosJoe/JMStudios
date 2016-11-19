@@ -1,40 +1,48 @@
-.tile {
-  background-color: purple;
-  opacity: 88.88889%;
-  width: 80%;
-  margin: auto;
-  padding: 10px; }
-  .tile img {
-    background-color: lime; }
-
-body {
-  font-size: 24px; }
-
-.header-container {
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-top: 60px;
-  background-color: white;
-  opacity: 0.9;
-  width: 90%;
-  padding: 10px;
-  font-size: 36px; }
-
-.title {
-  font-size: 66px; }
-
-.main-container {
+.container {
   display: block;
   margin: auto;
   text-align: center; }
+  .container .header-container {
+    background-color: white;
+    opacity: 0.9; }
+    .container .header-container .title {
+      font-size: 48px;
+      font-weight: 600; }
+    .container .header-container .sub-title {
+      font-size: 36;
+      font-weight: 300;
+      background-color: violet; }
 
 .team-container {
+  display: inline-block;
   float: left;
-  background-color: green; }
-  .team-container .profile-picture {
+  width: 100%; }
+  .team-container .team-member-details {
+    display: inline-block;
+    text-align: left;
+    margin: 6px;
+    width: 100%; }
+    .team-container .team-member-details .team-member-name {
+      font-size: 36px;
+      font-weight: bolder;
+      width: 50%;
+      margin: 0px; }
+    .team-container .team-member-details .team-member-title {
+      font-size: 24px;
+      font-weight: bold;
+      width: 30%;
+      margin: 0px; }
+    .team-container .team-member-details .team-member-description {
+      font-size: 18px;
+      width: 80%;
+      margin: 0px; }
+  .team-container .profile-picture-container .profile-picture {
     width: 160px;
     height: 160px; }
-  .team-container .alter-ego {
-    width: 110px;
-    height: 110px; }
+  .team-container .profile-picture-container .alter-ego {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    top: 26px;
+    left: 80px;
+    z-index: -3; }

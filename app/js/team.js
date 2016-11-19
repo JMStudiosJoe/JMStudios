@@ -9,6 +9,18 @@
     })
     .controller('Team', function($scope, $http) {
 
-        $scope.temp = "hello Team";
+        $scope.teamMembers = [{
+            name: "Joseph Richardson",
+            title: "Co Founder / Software Engineer",
+            description: "My name is Joseph Richardson. I am driven, passionate and ambitious with the projects I work on. JMStudios was founded in order for me to start creating solutions to problems I encounter throughout daily life.",
+            links: [{
+                    name: "Github",
+                    url: "https://github.com/JMStudiosJoe"
+                },
+                {
+                    name: "LinkedIn",
+                    url: "https://www.linkedin.com/in/joseph-richardson-97206953"
+                }]
+        }];
     });
 })();

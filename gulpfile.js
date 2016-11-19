@@ -20,20 +20,19 @@ gulp.task('compile-sass', function () {
 });
 
 gulp.task('run-server', function(cb) {
-    exec('node server.js', function (err, stdout, stderr) {
+    exec('node server.js', function () {
         console.log("server listening at port 7000");
-        console.log(stdout);
-        console.log(stderr);
+
         cb(err);
   });
 });
 
-gulp.task('watch-and-run', ['compile-sass', 'run-server'], function(done) {
+gulp.task('watch-and-run', ['compile-sass'], function() {
     console.log("watching files for changes");
-    gulp.watch('/app/**.*', ['compile-sass', 'run-server']);
-    gulp.watch('server.js', ['compile-sass', 'run-server']);
-    gulp.watch('styling.scss', ['compile-sass', 'run-server']);
-    console.log("watchers set and complete");
-    done();
+
+    gulp.watch('/app/scss/*.scss', ['compile-sass']);
+    
+
+
 
 });
