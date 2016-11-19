@@ -20,19 +20,15 @@ gulp.task('compile-sass', function () {
 });
 
 gulp.task('run-server', function(cb) {
-    exec('node server.js', function () {
+    exec('node server.js', function (err, stdout, stderr) {
         console.log("server listening at port 7000");
-
+        console.log(stdout);
+        console.log(stderr);
         cb(err);
   });
 });
 
 gulp.task('watch-and-run', ['compile-sass'], function() {
     console.log("watching files for changes");
-
     gulp.watch('/app/scss/*.scss', ['compile-sass']);
-    
-
-
-
 });

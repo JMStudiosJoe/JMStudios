@@ -12,8 +12,9 @@
             <div class="team-member-description">
                 {{member.description}}
             </div>
+
             <div ng-repeat="link in member.links">
-                <li><a ng-href="{{link.url}}">{{link.name}}</a></li>
+                <a ng-href="{{link.url}}"><i class="mdi {{link.icon}}"></i></a>
             </div>
         </div>
     </div>
