@@ -2,7 +2,8 @@
 (function(){
     var app = angular.module('jmstudios-app',['jmstudios-app.contact',
                                             'jmstudios-app.projects',
-                                            'jmstudios-app.team']);
+                                            'jmstudios-app.team',
+                                            'jmstudios-app.downloads']);
 
 
 })();

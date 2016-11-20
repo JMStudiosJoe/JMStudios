@@ -18,11 +18,16 @@
             font-weight: 300;
         }
     }
-    
+
     .main-container {
 
         .main-container-parallax {
             width: 100%;
+        }
+        .mission-message {
+            margin: 6px;
+            font-size: 24;
+            font-weight: 300;
         }
     }
 }

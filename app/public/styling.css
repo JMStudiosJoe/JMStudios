@@ -5,6 +5,7 @@
   .contact-container .contact-details {
     font-size: 24px; }
 
+
 .container {
   display: block;
   margin: auto;
@@ -21,6 +22,10 @@
       font-weight: 300; }
   .container .main-container .main-container-parallax {
     width: 100%; }
+  .container .main-container .mission-message {
+    margin: 6px;
+    font-size: 24;
+    font-weight: 300; }
 
 .team-container {
   display: inline-block;
