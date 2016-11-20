@@ -1,11 +1,12 @@
 .team-container {
-    display: inline-block;;
-    float: left;
+    display: inline-block;
+
     width: 100%;
 
     .team-member-details {
         display: inline-block;
         text-align: left;
+        float: left;
         margin: 6px;
         width: 100%;
 
@@ -14,7 +15,6 @@
             font-weight: bolder;
             width: 50%;
             margin: 0px;
-
         }
         .team-member-title {
             font-size: 24px;
@@ -28,13 +28,26 @@
             width: 80%;
             margin: 0px;
         }
+
+        .socail-container {
+            text-align: center;
+
+            .member-links {
+                display: inline;
+                margin: auto;
+            }
+        }
+
     }
+
     .profile-picture-container {
 
         .profile-picture {
             width: 160px;
             height: 160px;
-
+            position: relative;
+            top: 60;
+            left: 30;
         }
 
         .alter-ego {
@@ -42,7 +55,7 @@
             width: 120px;
             height: 140px;
             top: 26px;
-            left: 80px;
+            left: 74px;
             z-index: -3;
         }
     }

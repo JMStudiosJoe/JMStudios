@@ -1,5 +1,6 @@
-<h1>The team</h1>
+
 <div class="team-container">
+    <h1>The team</h1>
     <div ng-repeat="member in teamMembers track by $index">
         <div class="profile-picture-container" >
             <img class="alter-ego circle responsive-img" ng-src="/app/images/me.jpg">
@@ -12,10 +13,13 @@
             <div class="team-member-description">
                 {{member.description}}
             </div>
-
-            <div ng-repeat="link in member.links">
-                <a ng-href="{{link.url}}"><i class="mdi {{link.icon}}"></i></a>
+            <hr >
+            <div class="socail-container">
+                <div class="member-links" ng-repeat="link in member.links">
+                    <a ng-href="{{link.url}}"><i class="mdi {{link.icon}}"></i></a>
+                </div>
             </div>
+            <hr >
         </div>
     </div>
 </div>

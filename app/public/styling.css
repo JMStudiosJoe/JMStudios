@@ -11,22 +11,24 @@
   text-align: center; }
   .container .header-container {
     background-color: white;
-    opacity: 0.9; }
+    opacity: 0.9;
+    margin: 6px; }
     .container .header-container .title {
       font-size: 48px;
       font-weight: 600; }
     .container .header-container .sub-title {
       font-size: 36;
-      font-weight: 300;
-      background-color: violet; }
+      font-weight: 300; }
+  .container .main-container .main-container-parallax {
+    width: 100%; }
 
 .team-container {
   display: inline-block;
-  float: left;
   width: 100%; }
   .team-container .team-member-details {
     display: inline-block;
     text-align: left;
+    float: left;
     margin: 6px;
     width: 100%; }
     .team-container .team-member-details .team-member-name {
@@ -43,13 +45,21 @@
       font-size: 18px;
       width: 80%;
       margin: 0px; }
+    .team-container .team-member-details .socail-container {
+      text-align: center; }
+      .team-container .team-member-details .socail-container .member-links {
+        display: inline;
+        margin: auto; }
   .team-container .profile-picture-container .profile-picture {
     width: 160px;
-    height: 160px; }
+    height: 160px;
+    position: relative;
+    top: 60;
+    left: 30; }
   .team-container .profile-picture-container .alter-ego {
     position: relative;
     width: 120px;
     height: 140px;
     top: 26px;
-    left: 80px;
+    left: 74px;
     z-index: -3; }

@@ -9,10 +9,11 @@
     })
     .controller('Team', function($scope, $http) {
 
+        // more members : http://js.cytoscape.org/
         $scope.teamMembers = [{
             name: "Joseph Richardson",
             title: "Co Founder / Software Engineer",
-            description: "My name is Joseph Richardson. I am driven, passionate and ambitious with the projects I work on. JMStudios was founded in order for me to start creating solutions to problems I encounter throughout daily life.",
+            description: "My name is Joseph Richardson. I am driven, passionate and ambitious with the projects I choose to create for problems I want to solve. JMStudios was founded in order for me to start creating solutions to problems I encounter throughout daily life.",
             links: [{
                     name: "Github",
                     icon:'mdi-github-circle large',

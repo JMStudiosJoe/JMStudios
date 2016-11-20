@@ -6,18 +6,23 @@
 
         background-color: white;
         opacity: 0.9;
+        margin: 6px;
+
         .title {
             font-size: 48px;
             font-weight: 600;
         }
+
         .sub-title {
             font-size: 36;
             font-weight: 300;
-            background-color: violet;
-
         }
     }
+    
     .main-container {
 
+        .main-container-parallax {
+            width: 100%;
+        }
     }
 }

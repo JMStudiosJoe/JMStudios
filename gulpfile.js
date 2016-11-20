@@ -26,6 +26,7 @@ gulp.task('watch-and-run', ['compile-sass'], function() {
     script: 'server.js'
   , ext: 'js html scss'
   , env: { 'NODE_ENV': 'development' }
+  , tasks: ['compile-sass']
   })
 
 });
