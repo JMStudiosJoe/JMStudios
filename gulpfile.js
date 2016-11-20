@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
+var nodemon = require('gulp-nodemon');
 
 var exec = require('child_process').exec;
 
@@ -19,16 +20,12 @@ gulp.task('compile-sass', function () {
         .pipe(gulp.dest(PUBLIC_PATH));
 });
 
-gulp.task('run-server', function(cb) {
-    exec('node server.js', function (err, stdout, stderr) {
-        console.log("server listening at port 7000");
-        console.log(stdout);
-        console.log(stderr);
-        cb(err);
-  });
-});
-
 gulp.task('watch-and-run', ['compile-sass'], function() {
-    console.log("watching files for changes");
-    gulp.watch('/app/scss/*.scss', ['compile-sass']);
+
+  nodemon({
+    script: 'server.js'
+  , ext: 'js html scss'
+  , env: { 'NODE_ENV': 'development' }
+  })
+
 });

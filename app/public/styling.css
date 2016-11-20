@@ -1,3 +1,10 @@
+.contact-container {
+  display: inline-block;
+  float: left;
+  width: 100%; }
+  .contact-container .contact-details {
+    font-size: 24px; }
+
 .container {
   display: block;
   margin: auto;
