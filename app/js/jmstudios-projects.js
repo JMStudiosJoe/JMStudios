@@ -25,7 +25,7 @@
             logo: "",
             position: 0,
             github: {
-                icon: "mdi-github-circle medium",
+                icon: "mdi-github-circle small",
                 link: ""
             }
         },
@@ -44,7 +44,7 @@
             logo: "",
             position: 1,
             github: {
-                icon: "mdi-github-circle medium",
+                icon: "mdi-github-circle small",
                 link: "https://github.com/JMStudiosJoe/StudyBuddyV2"
             }
         },
@@ -63,7 +63,7 @@
             logo: "",
             position: 2,
             github: {
-                icon: "mdi-github-circle medium",
+                icon: "mdi-github-circle small",
                 link: "https://github.com/JMStudiosJoe/Peterest"
             }
         }];
