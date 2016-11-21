@@ -9,6 +9,7 @@
     })
     .controller('Contact', function($scope, $http) {
 
-        $scope.temp = "hello Contact";
+
+        $scope.tempContact = "hello Contact";
     });
 })();

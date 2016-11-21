@@ -1,7 +1,40 @@
-<h1>Projects</h1>
-<div class="project-ideas-container">
-    <ul>
-        <li>Voiting information tool</li>
-        <li></li>
-    </ul>
+<div class="projects-container">
+    <div class="projects-header">
+        <h1>Projects</h1>
+        {{tempProjects}}
+    </div>
+    <div class="project-ideas-container" ng-repeat="project in currentProjects">
+        <div class="project-details-container">
+            <div class="main-details">
+                <div>
+                    {{project.logo}}
+                </div>
+                <div>
+                    {{project.name}}
+                </div>
+                <div>
+                    {{project.link}}
+                </div>
+                <div>
+                    {{project.description}}
+                </div>
+                <div>
+                    <a ng-href="{{project.github.link}}"> <i class="mdi {{project.github.icon}}"></i></a>
+                </div>
+            </div>
+            <div class="discussion-container">
+                <div class="problem">
+                    {{project.problem}}
+                </div>
+                <div class="reference" ng-repeat="reference in project.references">
+                    {{reference}}
+                </div>
+                <div class="project-proposed-solutions" ng-repeat="solution in project.solutions">
+                    <li class="solution">{{solution}}</li>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 </div>
