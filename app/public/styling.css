@@ -1,3 +1,20 @@
+.container-outer-card {
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(220, 220, 220, 0.9);
+  z-index: -4;
+  box-shadow: 2px 2px 10px #888888;
+  width: 100%; }
+  .container-outer-card .container-inner-card {
+    margin: 6px;
+    padding: 6px;
+    position: relative;
+    background-color: white;
+    z-index: -3;
+    width: 100%;
+    height: 100%; }
+
 .contact-container {
   display: inline-block;
   float: left;
@@ -14,6 +31,12 @@
     background-color: white;
     opacity: 0.9;
     margin: 6px; }
+    .container .header-container .qick-nav-container .separater {
+      font-size: 18px;
+      color: rgba(0, 100, 200, 0.9);
+      padding: 10px; }
+    .container .header-container .qick-nav-container .nav {
+      padding: 10px; }
     .container .header-container .nav-home {
       position: fixed;
       top: 20px;
@@ -37,40 +60,51 @@
 
 .container-outer-card {
   position: relative;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   background-color: rgba(220, 220, 220, 0.9);
   z-index: -4;
-  box-shadow: 2px 2px 10px #888888; }
-  .container-outer-card .contain-inner-card {
+  box-shadow: 2px 2px 10px #888888;
+  width: 100%; }
+  .container-outer-card .container-inner-card {
     margin: 6px;
     padding: 6px;
     position: relative;
     background-color: white;
-    z-index: 1;
-    box-shadow: 1px 1px 20px #999999; }
+    z-index: -3;
+    width: 100%;
+    height: 100%; }
 
 .container-outer-card {
   position: relative;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   background-color: rgba(220, 220, 220, 0.9);
   z-index: -4;
-  box-shadow: 2px 2px 10px #888888; }
-  .container-outer-card .contain-inner-card {
+  box-shadow: 2px 2px 10px #888888;
+  width: 100%; }
+  .container-outer-card .container-inner-card {
     margin: 6px;
     padding: 6px;
     position: relative;
     background-color: white;
-    z-index: 1;
-    box-shadow: 1px 1px 20px #999999; }
+    z-index: -3;
+    width: 100%;
+    height: 100%; }
 
 .projects-container {
   display: block;
   width: 100%; }
   .projects-container .projects-header {
+    display: inline;
     text-align: center;
-    font-size: 24px; }
+    font-size: 24px;
+    width: 30px; }
+    .projects-container .projects-header .projects-quick-nav-container {
+      width: 30%;
+      display: inline; }
+      .projects-container .projects-header .projects-quick-nav-container .nav-item {
+        width: 60px; }
   .projects-container .project-ideas-container .project-details-container {
     text-align: left; }
     .projects-container .project-ideas-container .project-details-container .main-details .name {
@@ -79,61 +113,96 @@
     .projects-container .project-ideas-container .project-details-container .main-details .link {
       font-size: 18px; }
     .projects-container .project-ideas-container .project-details-container .main-details .description {
-      font-size: 22px;
-      width: 80%; }
+      display: inline-block;
+      float: left; }
+      .projects-container .project-ideas-container .project-details-container .main-details .description .descritor {
+        width: 30%;
+        margin: 6px;
+        font-size: 22px; }
+      .projects-container .project-ideas-container .project-details-container .main-details .description .actual-text {
+        font-size: 16px;
+        width: 100%; }
     .projects-container .project-ideas-container .project-details-container .discussion-container {
       display: inline-block;
       width: 100%; }
       .projects-container .project-ideas-container .project-details-container .discussion-container .problem {
-        width: 80%; }
+        text-align: left;
+        display: inline-block;
+        float: left; }
+        .projects-container .project-ideas-container .project-details-container .discussion-container .problem .descritor {
+          width: 30%;
+          margin: 6px;
+          font-size: 22px; }
+        .projects-container .project-ideas-container .project-details-container .discussion-container .problem .actual-text {
+          width: 100%;
+          font-size: 16px; }
       .projects-container .project-ideas-container .project-details-container .discussion-container .project-solutions-container {
         text-align: left; }
         .projects-container .project-ideas-container .project-details-container .discussion-container .project-solutions-container .project-proposed-solutions .solution {
-          width: 80%; }
+          width: 80%;
+          height: 100%;
+          font-size: 14px; }
       .projects-container .project-ideas-container .project-details-container .discussion-container .references-container {
         text-align: left; }
         .projects-container .project-ideas-container .project-details-container .discussion-container .references-container .reference {
           float: right;
           width: 60%; }
 
-.team-container {
-  display: inline-block;
+.container-outer-card {
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(220, 220, 220, 0.9);
+  z-index: -4;
+  box-shadow: 2px 2px 10px #888888;
   width: 100%; }
-  .team-container .team-member-details {
+  .container-outer-card .container-inner-card {
+    margin: 6px;
+    padding: 6px;
+    position: relative;
+    background-color: white;
+    z-index: -3;
+    width: 100%;
+    height: 100%; }
+
+.team-container {
+  display: block;
+  width: 100%;
+  z-index: 3; }
+  .team-container .team-member-container .team-member .team-member-details {
     display: inline-block;
     text-align: left;
     float: left;
     margin: 6px;
+    padding: 10px;
     width: 100%; }
-    .team-container .team-member-details .team-member-name {
+    .team-container .team-member-container .team-member .team-member-details .team-member-name {
       font-size: 36px;
       font-weight: bolder;
-      width: 50%;
-      margin: 0px; }
-    .team-container .team-member-details .team-member-title {
+      width: 50%; }
+    .team-container .team-member-container .team-member .team-member-details .team-member-title {
       font-size: 24px;
       font-weight: bold;
-      width: 30%;
-      margin: 0px; }
-    .team-container .team-member-details .team-member-description {
+      width: 30%; }
+    .team-container .team-member-container .team-member .team-member-details .team-member-description {
       font-size: 18px;
-      width: 80%;
-      margin: 0px; }
-    .team-container .team-member-details .socail-container {
+      width: 80%; }
+    .team-container .team-member-container .team-member .team-member-details .socail-container {
       text-align: center; }
-      .team-container .team-member-details .socail-container .member-links {
+      .team-container .team-member-container .team-member .team-member-details .socail-container .member-links {
         display: inline;
         margin: auto; }
-  .team-container .profile-picture-container .profile-picture {
+  .team-container .team-member-container .team-member .profile-picture-container .profile-picture {
     width: 160px;
     height: 160px;
     position: relative;
     top: 60;
-    left: 30; }
-  .team-container .profile-picture-container .alter-ego {
+    left: 30;
+    z-index: 2; }
+  .team-container .team-member-container .team-member .profile-picture-container .alter-ego {
     position: relative;
     width: 120px;
     height: 140px;
     top: 26px;
     left: 74px;
-    z-index: -3; }
+    z-index: 1; }

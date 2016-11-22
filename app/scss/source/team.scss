@@ -1,62 +1,72 @@
+@import "most-used.scss";
+
 .team-container {
-    display: inline-block;
-
+    display: block;
     width: 100%;
+    z-index: 3;
 
-    .team-member-details {
-        display: inline-block;
-        text-align: left;
-        float: left;
-        margin: 6px;
-        width: 100%;
+    .team-member-container {
+        
+        .team-member {
 
-        .team-member-name {
-            font-size: 36px;
-            font-weight: bolder;
-            width: 50%;
-            margin: 0px;
-        }
-        .team-member-title {
-            font-size: 24px;
-            font-weight: bold;
-            width: 30%;
-            margin: 0px;
-        }
+            .team-member-details {
+                display: inline-block;
+                text-align: left;
+                float: left;
+                margin: 6px;
+                padding: 10px;
+                width: 100%;
 
-        .team-member-description {
-            font-size: 18px;
-            width: 80%;
-            margin: 0px;
-        }
+                .team-member-name {
+                    font-size: 36px;
+                    font-weight: bolder;
+                    width: 50%;
 
-        .socail-container {
-            text-align: center;
+                }
+                .team-member-title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    width: 30%;
 
-            .member-links {
-                display: inline;
-                margin: auto;
+                }
+
+                .team-member-description {
+                    font-size: 18px;
+                    width: 80%;
+
+                }
+
+                .socail-container {
+                    text-align: center;
+
+                    .member-links {
+                        display: inline;
+                        margin: auto;
+                    }
+                }
+
             }
-        }
 
-    }
+            .profile-picture-container {
 
-    .profile-picture-container {
+                .profile-picture {
+                    width: 160px;
+                    height: 160px;
+                    position: relative;
+                    top: 60;
+                    left: 30;
+                    z-index: 2;
+                }
 
-        .profile-picture {
-            width: 160px;
-            height: 160px;
-            position: relative;
-            top: 60;
-            left: 30;
-        }
-
-        .alter-ego {
-            position: relative;
-            width: 120px;
-            height: 140px;
-            top: 26px;
-            left: 74px;
-            z-index: -3;
+                .alter-ego {
+                    position: relative;
+                    width: 120px;
+                    height: 140px;
+                    top: 26px;
+                    left: 74px;
+                    z-index: 1;
+                }
+            }
         }
     }
 }

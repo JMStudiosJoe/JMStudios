@@ -1,25 +1,36 @@
 
 <div id="team" class="team-container">
     <h1>The team</h1>
-    <div ng-repeat="member in teamMembers track by $index">
-        <div class="profile-picture-container" >
-            <img class="alter-ego circle responsive-img" ng-src="/app/images/me.jpg">
-            <img class="profile-picture circle responsive-img" ng-src="/app/images/profilepic.jpg">
-        </div>
-        <div class="team-member-details">
-            <span class="team-member-name">{{member.name}}</span><br >
-            <span class="team-member-title">{{member.title}}</span><br >
-            <hr >
-            <div class="team-member-description">
-                {{member.description}}
-            </div>
-            <hr >
-            <div class="socail-container">
-                <div class="member-links" ng-repeat="link in member.links">
-                    <a ng-href="{{link.url}}"><i class="mdi {{link.icon}}"></i></a>
+    <div class="team-member-container" ng-repeat="member in teamMembers track by $index">
+
+
+        <div class="container-outer-card">
+            <div class="container-inner-card">
+                <div class="team-member">
+                    <div class="profile-picture-container" >
+                        <img class="alter-ego circle responsive-img" ng-src="/app/images/me.jpg">
+                        <img class="profile-picture circle responsive-img" ng-src="/app/images/profilepic.jpg">
+                    </div>
+                    <div class="team-member-details">
+                        <span class="team-member-name">{{member.name}}</span><br >
+                        <span class="team-member-title">{{member.title}}</span><br >
+                        <hr >
+                        <div class="team-member-description">
+                            {{member.description}}
+                        </div>
+                        <hr >
+                        <div class="socail-container">
+                            <div class="member-links" ng-repeat="link in member.links">
+                                <a ng-href="{{link.url}}"><i class="mdi {{link.icon}}"></i></a>
+                            </div>
+                        </div>
+                        <hr >
+                    </div>
                 </div>
             </div>
-            <hr >
         </div>
+
+
+
     </div>
 </div>

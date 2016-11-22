@@ -5,10 +5,20 @@
     margin: auto;
     text-align: center;
     .header-container {
-
         background-color: white;
         opacity: 0.9;
         margin: 6px;
+
+        .qick-nav-container {
+            .separater {
+                font-size: 18px;
+                color: rgba(0, 100, 200, 0.9);
+                padding: 10px;
+            }
+            .nav {
+                padding: 10px;
+            }
+        }
 
         .nav-home {
             position: fixed;

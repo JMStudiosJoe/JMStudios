@@ -66,6 +66,24 @@
                 icon: "mdi-github-circle small",
                 link: "https://github.com/JMStudiosJoe/Peterest"
             }
+        },
+        {
+            name: "ReelMash",
+            description: "Mobile game matching celebrities through the media content they have starred in.",
+            problem: "I am pretty bad at it.",
+            references: [
+                
+            ],
+            solutions: [
+
+            ],
+            link:"",
+            logo: "",
+            position: 3,
+            github: {
+                icon: "mdi-github-circle small",
+                link: "#ReelMash"
+            }
         }];
     });
 })();

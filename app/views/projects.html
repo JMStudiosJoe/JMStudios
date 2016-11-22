@@ -1,16 +1,15 @@
 <div id="projects" class="projects-container">
     <div class="projects-header">
         <h1>Projects</h1>
-        <div class="projects-quick-nav-container">
-            <div ng-repeat="project in currentProjects | orderBy: 'position' ">
-                | <a ng-href="#{{project.name}}">{{project.name}}</a> |
+
+            <div class="projects-quick-nav-container" ng-repeat="project in currentProjects | orderBy: 'position' ">
+                | <a class="nav-item" ng-href="#{{project.name}}">{{project.name}}</a> |
             </div>
-        </div>
+
     </div>
     <div class="project-ideas-container" ng-repeat="project in currentProjects | orderBy: 'position'">
-
         <div id="{{project.name}}" class="container-outer-card">
-            <div class="contain-inner-card">
+            <div class="container-inner-card">
                 <div class="project-details-container">
                     <div class="main-details">
                         <div >
@@ -19,39 +18,46 @@
                         <div class="name">
                             Name: {{project.name}} <a ng-href="{{project.github.link}}"> <i class="mdi {{project.github.icon}}"></i></a>
                         </div>
-                        <div class="link">
-                            <a ng-href={{project.link}}>{{project.link}}</a>( If link broken then please contact Joseph email in <a href="#contact">Contact</a> )
+                        <div ng-if="project.link != ''" class="link">
+                            <a ng-href="{{project.link}}">{{project.link}}</a>( If link broken then please contact Joseph email in <a ng-href="#contact">Contact</a> )
                         </div>
+
                         <div class="description">
-                            Description: {{project.description}}
+                            <div class="descritor">Description:</div>
+                            <div class="actual-text">{{project.description}}</div>
                         </div>
 
 
                     </div>
                     <hr >
                     <div class="discussion-container">
+
                         <div class="problem">
-                            The Problem: {{project.problem}}
+                            <div class="descritor">The Problem:</div>
+                            <div class="actual-text">{{project.problem}}<div>
                         </div>
-                        <hr >
-                        <div class="references-container">
+
+                        <div ng-if="project.references.length != 0" class="references-container">
+                            <hr >
                             References:
                             <div class="reference" ng-repeat="reference in project.references">
                                 {{reference}}
                             </div>
                         </div>
-                        <hr >
-                        <div class="project-solutions-container">
+
+                        <div ng-if="project.solutions.length != 0" class="project-solutions-container">
+                            <hr >
                             Solutions:
                             <div class="project-proposed-solutions" ng-repeat="solution in project.solutions">
                                 <li class="solution">{{solution}}</li>
                             </div>
                         </div>
+                        <hr >
                     </div>
-                    <hr >
-
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>

@@ -6,8 +6,20 @@
 
 
     .projects-header {
+        display: inline;
         text-align: center;
         font-size: 24px;
+        width: 30px;
+
+        .projects-quick-nav-container {
+
+            width: 30%;
+            display: inline;
+            .nav-item {
+                width: 60px;
+
+            }
+        }
 
     }
     .project-ideas-container {
@@ -28,8 +40,17 @@
                 }
 
                 .description {
-                    font-size: 22px;
-                    width: 80%;
+                    display: inline-block;;
+                    float: left;
+                    .descritor {
+                        width: 30%;
+                        margin: 6px;
+                        font-size: 22px;
+                    }
+                    .actual-text {
+                        font-size: 16px;
+                        width: 100%;
+                    }
                 }
 
                 .repo {
@@ -43,7 +64,22 @@
                 width: 100%;
 
                 .problem {
-                    width: 80%;
+                    text-align: left;
+
+                    display: inline-block;
+                    float: left;
+                    .descritor {
+                        width: 30%;
+                        margin: 6px;
+                        font-size: 22px;
+
+                    }
+                    .actual-text {
+
+                        width: 100%;
+                        font-size: 16px;
+
+                    }
 
                 }
                 .project-solutions-container{
@@ -53,6 +89,8 @@
 
                         .solution {
                             width: 80%;
+                            height: 100%;
+                            font-size: 14px;
 
                         }
 
