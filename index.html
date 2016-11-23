@@ -14,31 +14,33 @@
 </head>
 <!--Import Google Icon Font-->
 
-<body id="home" class="container" >
-    <div ui-view></div>
-    <a ui-sref="home">State 1</a>
-    <a ui-sref="projects">State 2</a>
+<body class="container" >
+
     <div class="header-container tile">
         <div class="title">JMStuidos</div>
-
+        <div class="parallax-container main-container-parallax">
+            <div id="parallax" class="parallax"><img src="/app/images/space-earth-stratosphere-wallpaper-1.jpg"></div>
+        </div>
         <span class="waves-effect waves-light sub-title">Just Making Solutions Studios</span>
         <div class="qick-nav-container">
-            <a href="#home" ui-sref="home" class="nav-home "><i class="mdi mdi-arrow-up-bold-circle-outline"></i></a>
+            <a ui-sref="home" class="nav-home "><i class="mdi mdi-arrow-up-bold-circle-outline"></i></a>
             <a ui-sref="projects" class="nav">Projects</a><span class="separater">|</span>
             <a href="#downloads" class="nav">Downloads</a><span class="separater">|</span>
             <a href="#team" class="nav">Team</a><span class="separater">|</span>
             <a href="#contact" class="nav">Contact</a>
         </div>
     </div>
+    <a ui-sref="home">State 1</a>
+    <a ui-sref="projects">State 2</a>
+    <div ui-view></div>
 
-    <div class="parallax-container main-container-parallax">
-        <div id="parallax" class="parallax"><img src="/app/images/space-earth-stratosphere-wallpaper-1.jpg"></div>
-    </div>
-    <div class="main-container">
+
+
+    <!-- <div class="main-container">
         <div class="tile">
             <span class="mission-message">Creating solutions for the problems I want to tackle.</span>
         </div>
-        <!-- <projects></projects> -->
+        <projects></projects>
 
         <div class="parallax-container main-container-parallax">
             <div id="parallax" class="parallax"><img src="/app/images/milky-way.jpg"></div>
@@ -58,7 +60,7 @@
         </div>
         <contact></contact>
 
-    </div>
+    </div> -->
 
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -73,6 +75,7 @@
       <script src="/app/js/contact.js"></script>
       <script src="/app/js/team.js"></script>
       <script src="/app/js/downloads.js"></script>
+      <script src="/app/js/home.js"></script>
       <script src="/app/js/jmstudios-projects.js"></script>
       <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 

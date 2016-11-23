@@ -1,19 +1,22 @@
 //typescript and angularjs 2 hopefully https://angular.io/docs/ts/latest/quickstart.html
 (function(){
-    var app = angular.module('jmstudios-app',['ui.router',
-                                            'jmstudios-app.contact',
-                                            'jmstudios-app.projects',
-                                            'jmstudios-app.team',
-                                            'jmstudios-app.downloads']).config(function($stateProvider, $urlRouterProvider) {
-  //
+    var app = angular.module('jmstudios-app', ['ui.router',
+                                            'jmstudios-app.home'
+                                            ]).config(function($stateProvider, $urlRouterProvider) {
+                                              //
   // For any unmatched url, redirect to /
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise("/home");
   //
   // Now set up the states
   $stateProvider
+  .state('index', {
+    url: "/",
+    templateUrl: "index.html"
+  })
     .state('home', {
-      url: "/",
-      templateUrl: "/index.html"
+      url: "/home",
+      templateUrl: "/app/views/home.html",
+      controller: 'Home'
     })
     .state('projects', {
       url: "/projects",
