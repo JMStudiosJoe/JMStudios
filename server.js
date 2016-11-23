@@ -10,7 +10,7 @@ router.get( '/', function( req, res ) {
 
     console.log( __dirname );
     console.log( '_____________________________' );
-    res.sendFile( path.join(__dirname+'/app/views/index.html'));
+    res.sendFile( path.join(__dirname+'/index.html'));
 });
 
 app.use( router );

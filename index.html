@@ -15,14 +15,16 @@
 <!--Import Google Icon Font-->
 
 <body id="home" class="container" >
-
+    <div ui-view></div>
+    <a ui-sref="home">State 1</a>
+    <a ui-sref="projects">State 2</a>
     <div class="header-container tile">
         <div class="title">JMStuidos</div>
 
         <span class="waves-effect waves-light sub-title">Just Making Solutions Studios</span>
         <div class="qick-nav-container">
-            <a href="#home" class="nav-home "><i class="mdi mdi-arrow-up-bold-circle-outline"></i></a>
-            <a href="#projects" class="nav">Projects</a><span class="separater">|</span>
+            <a href="#home" ui-sref="home" class="nav-home "><i class="mdi mdi-arrow-up-bold-circle-outline"></i></a>
+            <a ui-sref="projects" class="nav">Projects</a><span class="separater">|</span>
             <a href="#downloads" class="nav">Downloads</a><span class="separater">|</span>
             <a href="#team" class="nav">Team</a><span class="separater">|</span>
             <a href="#contact" class="nav">Contact</a>
@@ -36,7 +38,7 @@
         <div class="tile">
             <span class="mission-message">Creating solutions for the problems I want to tackle.</span>
         </div>
-        <projects></projects>
+        <!-- <projects></projects> -->
 
         <div class="parallax-container main-container-parallax">
             <div id="parallax" class="parallax"><img src="/app/images/milky-way.jpg"></div>
@@ -72,6 +74,7 @@
       <script src="/app/js/team.js"></script>
       <script src="/app/js/downloads.js"></script>
       <script src="/app/js/jmstudios-projects.js"></script>
+      <script src="/node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 </body>
 </html>
