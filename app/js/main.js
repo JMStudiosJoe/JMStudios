@@ -9,10 +9,10 @@
   //
   // Now set up the states
   $stateProvider
-  .state('index', {
+    .state('index', {
     url: "/",
     templateUrl: "index.html"
-  })
+    })
     .state('home', {
       url: "/home",
       templateUrl: "/app/views/home.html",
@@ -22,6 +22,21 @@
       url: "/projects",
       templateUrl: "/app/views/projects.html",
       controller: 'Projects'
+    })
+    .state('contact', {
+      url: "/contact",
+      templateUrl: "/app/views/contact.html",
+      controller: 'Contact'
+    })
+    .state('team', {
+      url: "/team",
+      templateUrl: "/app/views/team.html",
+      controller: 'Team'
+    })
+    .state('downloads', {
+      url: "/downloads",
+      templateUrl: "/app/views/downloads.html",
+      controller: 'Downloads'
     })
 
 });
