@@ -9,8 +9,12 @@
 
             getImageName() {
                 console.log("wow we got the factory service connected");
-                var index = Math.floor( Math.random() ) % self.parallaxImageNames.length;
-                return self.parallaxImageNames[index];
+                console.log(parallaxImageNames);
+                console.log("wow we got the factory service connected");
+                console.log(this);
+                console.log("wow we got the factory service connected");
+                var index = Math.floor( Math.random() ) % parallaxImageNames.length;
+                return parallaxImageNames[index];
             }
         };
 
