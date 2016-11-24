@@ -1,6 +1,7 @@
 //typescript and angularjs 2 hopefully https://angular.io/docs/ts/latest/quickstart.html
 (function(){
     var app = angular.module('jmstudios-app', ['ui.router',
+                                            'ngParallax',
                                             'jmstudios-app.home'
                                             ]).config(function($stateProvider, $urlRouterProvider) {
                                               //

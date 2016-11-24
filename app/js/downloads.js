@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('jmstudios-app.downloads',[])
+    var app = angular.module('jmstudios-app.downloads',['ngParallax'])
     .directive('downloads', function() {
         return {
             restrict: "E",

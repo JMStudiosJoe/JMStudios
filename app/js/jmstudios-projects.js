@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('jmstudios-app.projects',[])
+    var app = angular.module('jmstudios-app.projects',['ngParallax'])
     .directive('projects', function() {
         return {
             restrict: "E",
@@ -72,7 +72,7 @@
             description: "Mobile game matching celebrities through the media content they have starred in.",
             problem: "I am pretty bad at it.",
             references: [
-                
+
             ],
             solutions: [
 

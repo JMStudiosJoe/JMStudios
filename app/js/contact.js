@@ -1,5 +1,8 @@
 (function(){
-    var app = angular.module('jmstudios-app.contact',[])
+    var app = angular.module('jmstudios-app.contact',[
+        'ngParallax',
+        'jmstudios-app.ParallaxService'
+    ])
     .directive('contact', function() {
         return {
             restrict: "E",
@@ -7,9 +10,9 @@
             controller: "Contact"
         };
     })
-    .controller('Contact', function($scope, $http) {
+    .controller('Contact', function($scope, $http, ParallaxService) {
 
-
+        console.log( ParallaxService.getImageName() );
         $scope.tempContact = "hello Contact";
     });
 })();

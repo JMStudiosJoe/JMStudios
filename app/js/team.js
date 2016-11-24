@@ -1,5 +1,5 @@
 (function(){
-    var app = angular.module('jmstudios-app.team',[])
+    var app = angular.module('jmstudios-app.team',['ngParallax'])
     .directive('team', function() {
         return {
             restrict: "E",
