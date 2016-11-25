@@ -12,7 +12,11 @@
     })
     .controller('Contact', function($scope, $http, ParallaxService) {
 
-        console.log( ParallaxService.getImageName() );
-        $scope.tempContact = "hello Contact";
+        console.log(  );
+        $scope.baseURL = "/app/images/";
+
+        $scope.getParallaxImageName = function() {
+            return $scope.baseURL + ParallaxService.getImageName();
+        };
     });
 })();
