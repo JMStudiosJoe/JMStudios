@@ -3,7 +3,7 @@
         <h1>Projects</h1>
 
             <div class="projects-quick-nav-container" ng-repeat="project in currentProjects | orderBy: 'position' ">
-                | <a class="nav-item" ng-href="#{{project.name}}">{{project.name}}</a> |
+                | <a class="nav-item" ui-sref="projects" ng-href="#{{project.name}}">{{project.name}}</a> |
             </div>
 
     </div>
