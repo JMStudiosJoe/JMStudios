@@ -68,6 +68,25 @@
             }
         },
         {
+            name: "Jester",
+            description: "Swift iOS A Jokes and Riddles app.",
+            problem: "An app for bringing out the hidden Jester within you.",
+            references: [
+                "site"
+            ],
+            solutions: [
+                "Get good at telling jokes",
+                "Get better with riddles"
+            ],
+            link:"",
+            logo: "",
+            position: 2,
+            github: {
+                icon: "mdi-github-circle small",
+                link: "https://github.com/JMStudiosJoe/Jester"
+            }
+        },
+        {
             name: "ReelMash",
             description: "Mobile game matching celebrities through the media content they have starred in.",
             problem: "I am pretty bad at it.",
