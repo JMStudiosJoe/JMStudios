@@ -1,5 +1,8 @@
 (function(){
-    var app = angular.module('jmstudios-app.projects',['ngParallax'])
+    var app = angular.module('jmstudios-app.projects',[
+        'ngParallax',
+        'jmstudios-app.voteSmartLocal'
+    ])
     .directive('projects', function() {
         return {
             restrict: "E",
@@ -51,13 +54,13 @@
         {
             name: "Peterest",
             description: "Peterest is the Pinterest for you pets. Also acts as a animal lost and found using algorithms to match uploaded lost pet information with found pet information by your local community.",
-            problem: "Every student needs a computer and internet to access Google to ask questions. Many services such as Google, Yahoo, Yelp, and many more have a one to many relationship, student asks one question recieves many related search results.",
+            problem: "There is not a pet lost and found service that also has smart algorithms to try and find your lost pet.",
             references: [
                 "site"
             ],
             solutions: [
-                "Text message based bot that only requires a phone to have SMS messaging capailities to learn the complex concepts of Computer Science, or any subject matter StudyBuddy could be trained in.",
-                "Students as one question and recieve one answer if StudyBuddy knows the answer, if not StudyBuddy will store that unaswered question for the admins to answer later."
+                "Website pinterest clone for animals.",
+                "Section for lost and found animals, upload pictures and details of lost pets or found pets. The server will then use algorithms to try and match lost and found pets and let the user know if found."
             ],
             link:"",
             logo: "",
