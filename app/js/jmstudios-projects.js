@@ -1,7 +1,8 @@
 (function(){
     var app = angular.module('jmstudios-app.projects',[
-        'ngParallax',
-        'jmstudios-app.voteSmartLocal'
+        'ngJmsParallax',
+        'jmstudios-app.voteSmartLocal',
+        'jmstudios-app.ParallaxService'
     ])
     .directive('projects', function() {
         return {
@@ -10,9 +11,15 @@
             controller: "Projects"
         };
     })
-    .controller('Projects', function($scope, $http) {
+    .controller('Projects', function($scope, $http, ParallaxService) {
 
         $scope.tempProjects = "hello projects";
+
+        $scope.baseURL = "/app/images/";
+
+        $scope.getParallaxImageName = function() {
+            return $scope.baseURL + ParallaxService.getImageName();
+        };
         $scope.currentProjects = [{
             name: "Vote Smart Locally",
             description: "A voting information tool to inform voters of their local elections and who is running for them, their supporters, what their plan is and their goals to inform voters of their local elections.",

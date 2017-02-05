@@ -1,16 +1,18 @@
 'use strict';
 if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.exports === exports) {
-  module.exports = 'ngParallax';
+  module.exports = 'ngJmsParallax';
 }
-angular.module('ngParallax',[]);
-angular.module('ngParallax').directive('ngParallax', [
+angular.module('ngJmsParallax',[]);
+angular.module('ngJmsParallax').directive('ngJmsParallax', [
   '$timeout',
   function ($window, $timeout) {
     return {
-        restrict: 'AE',
+        restrict: 'A',
         scope:{
-          pattern: '=',
-          speed: '='
+            pattern: '=',
+            speed: '=',
+            repeat: '=',
+            attachment: '='
         },
         link: function(scope, elem, attr) {
 
@@ -28,15 +30,15 @@ angular.module('ngParallax').directive('ngParallax', [
              else{
               return false;
             }
-          }
-
+          };
+          console.log(scope.repeat);
+          console.log(scope.pattern);
           var bgObj = elem[0];
-              bgObj.style.backgroundRepeat = "no-repeat"; //need this to tie to directive 
-              bgObj.style.backgroundAttachment = "fixed";
+              bgObj.style.backgroundRepeat = "no-repeat"; //need this to tie to directive
               bgObj.style.height = "100%";
-              bgObj.style.margin = "0 auto"
-              bgObj.style.position = "relative"
-              bgObj.style.background = "url(" + scope.pattern + ")"
+              bgObj.style.margin = "0 auto";
+              bgObj.style.position = "relative";
+              bgObj.style.background = "url(" + scope.pattern + ")";
               bgObj.style.backgroundAttachment = 'fixed';
           var isMobile = window.mobileAndTabletcheck();
 

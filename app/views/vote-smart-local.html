@@ -1,4 +1,13 @@
-<div>
-    <h1> vote smart project</h1>
-    {{voteInfo}}
+<div class="vote-smart-local-sampler">
+    <div class="voter-info">
+        <h3>Vote smart project sampler</h3>
+
+        <input type="text" ng-model="models.voterAddress">
+        <button ng-click="findVoterInfo()">Submit</button>
+
+    </div>
+
+    <div class="voter-results-info">
+        {{voterInfo}}
+    </div>
 </div>
