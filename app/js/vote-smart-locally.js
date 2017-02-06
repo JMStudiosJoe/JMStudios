@@ -9,16 +9,23 @@
     })
     .controller('VoteSmartLocallyController', function($scope, $http) {
 
-        $scope.voterInfo = "";
+        $scope.voterInfo = {};
+        $scope.divisions = {};
+        $scope.officials = {};
+        $scope.offices = {};
+
         $scope.models = {
-            voterAddress:''
+            voterAddress:'1184+normandy+drive+cambpell+ca+95008'
         };
 
         $scope.findVoterInfo = function() {
             $http.post('/get-vote-info', {'address': $scope.models.voterAddress}, {}).then(function successCallback(response) {
-                console.log("IN RESPONSE VOTE SMART JS");
-                console.log(response);
-                $scope.voterInfo = response;
+
+                $scope.offices = response.data.offices;
+                $scope.officials = response.data.officials;
+                $scope.divisions = response.data.divisions;
+
+                console.log( $scope.divisions );
                 // this callback will be called asynchronously
                 // when the response is available
             }, function errorCallback(response) {

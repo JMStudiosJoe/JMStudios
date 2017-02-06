@@ -7,7 +7,24 @@
 
     </div>
 
-    <div class="voter-results-info">
-        {{voterInfo}}
+    <div ng-if="officials.length > 0" class="voter-results-officials">
+        <h1>OFFICIALS</h1>
+        <div ng-repeat="official in officials">
+            {{official.name}}
+        </div>
+    </div>
+    <div ng-if="offices.length > 0" class="voter-results-offices">
+        <hr >
+        <h1>OFFICES</h1>
+        <div ng-repeat="office in offices">
+            {{office.name}}
+        </div>
+    </div>
+    <div ng-if="divisions.length > 0" class="voter-results-divisions">
+        <hr >
+        <h1>DIVISIONS</h1>
+        <div ng-repeat="division in divisions">
+            {{division}}
+        </div>
     </div>
 </div>
