@@ -17,7 +17,7 @@
         $scope.models = {
             voterAddress:'1184+normandy+drive+cambpell+ca+95008'
         };
-
+            
         $scope.findVoterInfo = function() {
             $http.post('/get-vote-info', {'address': $scope.models.voterAddress}, {}).then(function successCallback(response) {
 
