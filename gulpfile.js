@@ -16,7 +16,7 @@ gulp.task('compile-sass', function () {
     console.log("recompiling sass");
     return gulp.src(SOURCE_PATH)
         .pipe(sass().on('error', sass.logError))
-        .pipe(concat('styling.css'))
+            .pipe(concat('styling.css'))
         .pipe(gulp.dest(PUBLIC_PATH));
 });
 

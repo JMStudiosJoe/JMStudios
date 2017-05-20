@@ -12,6 +12,12 @@ router.get( '/', function( req, res ) {
     console.log( '_____________________________' );
     res.sendFile( path.join(__dirname+'/index.html'));
 });
+router.get( '/projects', function( req, res ) {
+
+    console.log( __dirname );
+    console.log( 'why in projects?' );
+    res.sendFile( path.join(__dirname+'/index.html'));
+});
 
 app.use( router );
 app.use("/", express.static(__dirname + '/'));
