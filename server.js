@@ -42,59 +42,35 @@ router.post( '/get-vote-info', function( req, res ) {
     var fullDivisionsURL = baseDivisionsURL+address+endURL;
 
     requestPromise(fullRepURL).then(
-        function successCallback(response, body) {
+        function successCallback(response) {
             var allData = JSON.parse(response);
             var divisions = allData['divisions'];
             var officials = allData['officials'];
             var offices = allData['offices'];
+
             var responseData = {
                 divisions: divisions,
                 officials: officials,
                 offices: offices
 
             };
+
             requestPromise(fullElectionsURL).then(
-                function successCallback(response, body) {
+                function successCallback(response) {
                     var allElectionData = JSON.parse(response);
-                    console.log(allElectionData);
                     responseData['elections'] = allElectionData;
-                    console.log("--------------------------------")
 
-
-                    requestPromise(fullDivisionsURL).then(
-                        function successCallback(response, body) {
-                            var allDivionData = JSON.parse(response);
-                            console.log(allDivionData);
-                            responseData['divisions'] = allDivionData;
-                            console.log("--------------------------------")
-                            res.send(responseData);
-
-                        },
-                        function failedCallback(error) {
-                            console.log(error);
-                        }
-                    );
-
-
-
-
+                    res.send(responseData);
                 },
                 function failedCallback(error) {
                     console.log(error);
                 }
             );
-
-
         },
         function failedCallback(error) {
             console.log(error);
         }
     );
-
-
-
-
-
 });
 
 

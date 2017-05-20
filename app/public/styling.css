@@ -213,3 +213,7 @@
 
 .vote-smart-local-sampler {
   margin: 20px; }
+  .vote-smart-local-sampler .voter-results-info table thead th {
+    text-align: center; }
+  .vote-smart-local-sampler .voter-results-info table tbody tr td {
+    text-align: center; }

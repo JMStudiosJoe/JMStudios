@@ -1,30 +1,39 @@
 <div class="vote-smart-local-sampler">
     <div class="voter-info">
         <h3>Vote smart project sampler</h3>
-        <span>1184 normandy drive cambpell ca 95008</span>
         <input type="text" ng-model="models.voterAddress">
         <button ng-click="findVoterInfo()">Submit</button>
+        <button ng-click="testing()">testing</button>
 
     </div>
+    <div class="voter-results-info">
+        <table  ng-if="offices.length > 0">
+            <thead>
+                <tr>
+                    <th>OFFICE</th>
+                    <th>NAME</th>
+                    <th>PARTY</th>
+                    <th>PHONE</th>
+                </tr>
 
-    <div ng-if="officials.length > 0" class="voter-results-officials">
-        <h1>OFFICIALS</h1>
-        <div ng-repeat="official in officials">
-            {{official.name}}
-        </div>
+            </thead>
+            <tbody>
+                <tr ng-repeat="office in offices">
+                    <td class="office-name">{{office.name}}</td>
+                    <td class="official-name">{{officials[office.officialIndices[0]].name}}</td>
+                    <td class="official-party">{{officials[office.officialIndices[0]].party}}</td>
+                    <td class="official-phone-number">{{officials[office.officialIndices[0]].phones[0]}}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div ng-if="offices.length > 0" class="voter-results-offices">
+
+
+    <div ng-if="elections.length > 0" >
         <hr >
-        <h1>OFFICES</h1>
-        <div ng-repeat="office in offices">
-            {{office.name}}
-        </div>
-    </div>
-    <div ng-if="divisions.length > 0" class="voter-results-divisions">
-        <hr >
-        <h1>DIVISIONS</h1>
-        <div ng-repeat="division in divisions">
-            {{division}}
+        <h1>Elections</h1>{{elections.length}}
+        <div ng-repeat="election in elections">
+            {{election}}
         </div>
     </div>
 </div>

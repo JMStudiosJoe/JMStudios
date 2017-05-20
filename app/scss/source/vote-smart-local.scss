@@ -3,7 +3,22 @@
     .voter-info {
     }
 
-    .voter-results-info{
+    .voter-results-info {
+        table {
+            thead {
+                th {
+                    text-align: center;
+
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
 
 }
